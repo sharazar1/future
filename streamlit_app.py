@@ -1,5 +1,6 @@
 import streamlit as st
-
+import time
+# from datetime import time
 st.title("This is a Title")
 st.header("This is a Header")
 st.checkbox(label="This is a checkbox", key="T&C accepted", help="Check to accept T&C")
@@ -30,3 +31,10 @@ text_small = st.text_input(label="Enter ssome text", max_chars=10)
 #text_big = st.text_area(label="Enter big text")
 st.text(text_small)
 print(text_small)
+dt = st.date_input("Enter your date")
+tm = st.time_input("Enter Time")
+# Progress Bars
+bar = st.progress(50)
+for i in range(10):
+    bar.progress((i+1)*10)
+    time.sleep(1)
