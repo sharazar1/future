@@ -1,0 +1,8 @@
+[client]
+
+showErrorDetails = false
+toolbarMode = "viewer"
+
+[browser]
+
+gatherUsageStats = false
