@@ -1,7 +1,7 @@
 [client]
 
 showErrorDetails = false
-toolbarMode = "viewer"
+toolbarMode = "minimal"
 
 [browser]
 
