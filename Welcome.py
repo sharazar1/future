@@ -174,8 +174,6 @@ components.html(html_code, height=600, scrolling=False)
 
 with st.sidebar:
 
-    # ... (your existing sidebar code) ...
-
     # LinkedIn button with GIF
     linkedin_gif_path = "./static/linkedin.gif"  # Path to your LinkedIn GIF
     with open(linkedin_gif_path, "rb") as f:
