@@ -171,55 +171,22 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
-import streamlit as st
 
-# Path to your LinkedIn GIF
-linkedin_gif_path = "static/linkedin.gif"  # Replace with the correct path to your LinkedIn GIF
+with st.sidebar:
 
-# Add LinkedIn button in the sidebar with hover effect
+    # ... (your existing sidebar code) ...
 
-linkedin_gif_path = "./static/linkedin.gif"
-
-st.sidebar.markdown(
-    f"""
-    <div style="display: flex; align-items: center; flex-direction: column;">
-        <!-- LinkedIn Button (Static to GIF on Hover) -->
-        <a href="https://www.linkedin.com/" target="_blank" 
-           style="display: inline-block; margin: 20px; text-decoration: none; 
-                  width: 100px; height: 100px; border-radius: 8px; position: relative;">
-            <img src="{linkedin_gif_path}" alt="LinkedIn GIF" class="linkedin-img" 
-                 style="width: 100%; height: 100%; border-radius: 8px; opacity: 0; transition: opacity 0.3s;">
-            <img src="static/linkedin-icon.png" alt="LinkedIn Icon" 
-                 style="width: 100%; height: 100%; border-radius: 8px; position: absolute; top: 0; left: 0;">
+    # LinkedIn button with GIF
+    linkedin_gif_path = "./static/linkedin.gif"  # Path to your LinkedIn GIF
+    with open(linkedin_gif_path, "rb") as f:
+        linkedin_gif = f.read()
+    
+    # Use st.sidebar.markdown to embed the GIF as a clickable link
+    st.sidebar.markdown(
+        f"""
+        <a href="https://www.linkedin.com/in/sharazar/" target="_blank">
+            <img src="data:image/gif;base64,{base64.b64encode(linkedin_gif).decode()}" alt="LinkedIn" style="width: 30px; height: 35px;">
         </a>
-    </div>
-    """, unsafe_allow_html=True
-)
-
-# Add hover effect using CSS to show the GIF only on hover
-st.sidebar.markdown(
-    """
-    <style>
-    a:hover .linkedin-img {
-        opacity: 1;  /* Show GIF on hover */
-    }
-
-    a:hover img:not(.linkedin-img) {
-        opacity: 0;  /* Hide static image on hover */
-    }
-    </style>
-    """, unsafe_allow_html=True
-)
-
-
-# Add hover effect using CSS for the animated button
-st.sidebar.markdown(
-    """
-    <style>
-    a:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-    </style>
-    """, unsafe_allow_html=True
-)
+        """,
+        unsafe_allow_html=True,
+    )
