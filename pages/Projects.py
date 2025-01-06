@@ -8,8 +8,11 @@ st.set_page_config(
     layout="wide"
 )
 
-# Define HTML for the particles background
-html_code = """
+# Path to your profile picture
+image_path = "static/profile-picture.jpg"
+
+# HTML Code with Profile Picture and Title
+html_code = f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +21,14 @@ html_code = """
     <title>Particles Background</title>
     <style>
         /* Full height for the body and particles container */
-        html, body {
+        html, body {{
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
-        }
+        }}
 
-        #particles-js {
+        #particles-js {{
             position: fixed;
             width: 100%;
             height: 100%;
@@ -33,10 +36,10 @@ html_code = """
             left: 0;
             z-index: -1; /* Background layer */
             background-color: #000; /* Black background */
-        }
+        }}
 
         /* Centered content */
-        .content {
+        .content {{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -44,17 +47,25 @@ html_code = """
             text-align: center;
             color: white;
             font-family: Arial, sans-serif;
-        }
+        }}
 
-        .content h1 {
+        .content img {{
+            width: 150px; /* Adjust size of the profile picture */
+            height: 150px; /* Ensure it's a square */
+            border-radius: 50%; /* Make it round */
+            border: 3px solid white; /* Add a white border for aesthetics */
+            margin-bottom: 20px; /* Space between image and title */
+        }}
+
+        .content h1 {{
             font-size: 3em;
             margin: 0;
-        }
+        }}
 
-        .content p {
+        .content p {{
             font-size: 1.2em;
             margin: 10px 0;
-        }
+        }}
     </style>
 </head>
 <body>
@@ -63,48 +74,49 @@ html_code = """
 
     <!-- Centered content -->
     <div class="content">
-        <h1>Welcome to My Website</h1>
+        <img src="{image_path}" alt="Profile Picture">
+        <h1>Your Name</h1>
         <p>Data Analytics | Visualization | Infrastructure Modernization</p>
     </div>
 
     <!-- Particles.js script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
+        particlesJS("particles-js", {{
+            "particles": {{
+                "number": {{
                     "value": 80,
-                    "density": {
+                    "density": {{
                         "enable": true,
                         "value_area": 800
-                    }
-                },
-                "color": {
+                    }}
+                }},
+                "color": {{
                     "value": "#ffffff"
-                },
-                "shape": {
+                }},
+                "shape": {{
                     "type": "circle",
-                    "stroke": {
+                    "stroke": {{
                         "width": 0,
                         "color": "#000000"
-                    }
-                },
-                "opacity": {
+                    }}
+                }},
+                "opacity": {{
                     "value": 0.5,
                     "random": false
-                },
-                "size": {
+                }},
+                "size": {{
                     "value": 3,
                     "random": true
-                },
-                "line_linked": {
+                }},
+                "line_linked": {{
                     "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
                     "opacity": 0.4,
                     "width": 1
-                },
-                "move": {
+                }},
+                "move": {{
                     "enable": true,
                     "speed": 2,
                     "direction": "none",
@@ -112,32 +124,32 @@ html_code = """
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false
-                }
-            },
-            "interactivity": {
+                }}
+            }},
+            "interactivity": {{
                 "detect_on": "canvas",
-                "events": {
-                    "onhover": {
+                "events": {{
+                    "onhover": {{
                         "enable": true,
                         "mode": "repulse"
-                    },
-                    "onclick": {
+                    }},
+                    "onclick": {{
                         "enable": true,
                         "mode": "push"
-                    }
-                },
-                "modes": {
-                    "repulse": {
+                    }}
+                }},
+                "modes": {{
+                    "repulse": {{
                         "distance": 100,
                         "duration": 0.4
-                    },
-                    "push": {
+                    }},
+                    "push": {{
                         "particles_nb": 4
-                    }
-                }
-            },
+                    }}
+                }}
+            }},
             "retina_detect": true
-        });
+        }});
     </script>
 </body>
 </html>
