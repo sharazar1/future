@@ -1,0 +1,22 @@
+/* Particles container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps the particles in the background */
+    background-color: #000; /* Black background */
+  }
+  
+  /* Centered content */
+  .content {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
