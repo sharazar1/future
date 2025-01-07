@@ -178,13 +178,40 @@ with st.sidebar:
     linkedin_gif_path = "./static/linkedin.gif"  # Path to your LinkedIn GIF
     with open(linkedin_gif_path, "rb") as f:
         linkedin_gif = f.read()
-    
+
+    # Email button with GIF
+    email_gif_path = "./static/email.gif"  # Path to email GIF
+    with open(email_gif_path, "rb") as f:
+        email_gif = f.read()
+
+    # whatsapp button with GIF
+    whatsapp_gif_path = "./static/whatsapp.gif"  # Path to whatsapp GIF
+    with open(whatsapp_gif_path, "rb") as f:
+        whatsapp_gif = f.read()
+
+    # call button with GIF
+    call_gif_path = "./static/call.gif"  # Path to call GIF
+    with open(call_gif_path, "rb") as f:
+        call_gif = f.read()
+
     # Use st.sidebar.markdown to embed the GIF as a clickable link
     st.sidebar.markdown(
         f"""
-        <a href="https://www.linkedin.com/in/sharazar/" target="_blank">
-            <img src="data:image/gif;base64,{base64.b64encode(linkedin_gif).decode()}" alt="LinkedIn" style="width: 30px; height: 35px;">
-        </a>
+        <div style="display: flex; flex-direction: row; gap: 10px;">
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/sharazar/" target="_blank">
+                <img src="data:image/gif;base64,{base64.b64encode(linkedin_gif).decode()}" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+            <!-- Email Button -->
+            <a href="mailto:sharazar00@gmail.com">
+            <img src="data:image/gif;base64,{base64.b64encode(email_gif).decode()}" alt="Email" style="width: 25px; height: 25px;">
+            </a>
+            <!-- Whatsapp Button -->
+            <a href="https://wa.me/923055604285?text=Hello!%20I%27d%20love%20to%20hear%20more%20about%20how%20we%20can%20work%20together.%20Feel%20free%20to%20share%20your%20ideas%20or%20questions%E2%80%94I%27m%20looking%20forward%20to%20chatting%20with%20you!">
+            <img src="data:image/gif;base64,{base64.b64encode(whatsapp_gif).decode()}" alt="Email" style="width: 25px; height: 25px;">
+            </a>
+
+        </div>
         """,
         unsafe_allow_html=True,
     )
