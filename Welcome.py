@@ -197,7 +197,7 @@ with st.sidebar:
     # Use st.sidebar.markdown to embed the GIF as a clickable link
     st.sidebar.markdown(
         f"""
-        <div style="display: flex; flex-direction: row; gap: 10px;">
+        <div style="display: flex; flex-direction: row; gap: 50px;">
             <!-- LinkedIn Button -->
             <a href="https://www.linkedin.com/in/sharazar/" target="_blank">
                 <img src="data:image/gif;base64,{base64.b64encode(linkedin_gif).decode()}" alt="LinkedIn" style="width: 30px; height: 30px;">
@@ -210,8 +210,163 @@ with st.sidebar:
             <a href="https://wa.me/923055604285?text=Hello!%20I%27d%20love%20to%20hear%20more%20about%20how%20we%20can%20work%20together.%20Feel%20free%20to%20share%20your%20ideas%20or%20questions%E2%80%94I%27m%20looking%20forward%20to%20chatting%20with%20you!">
             <img src="data:image/gif;base64,{base64.b64encode(whatsapp_gif).decode()}" alt="Email" style="width: 25px; height: 25px;">
             </a>
+            <!-- call Button -->
+            <a href="tel:+923055604285">
+            <img src="data:image/gif;base64,{base64.b64encode(call_gif).decode()}" alt="Call" style="width: 25px; height: 25px;">
+            </a>
+            
 
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+
+# timeline Below
+
+
+import streamlit as st
+import streamlit.components.v1 as components
+
+# Embed the updated timeline HTML/CSS
+components.html(
+    """
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #00BFAE;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline li {
+            padding: 10px 0;
+            position: relative;
+            list-style: none;
+        }
+
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #00BFAE;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -7.5px;
+            top: 0;
+        }
+
+        .timeline .container {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            width: 45%;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .timeline .container.left {
+            left: 0;
+        }
+
+        .timeline .container.right {
+            left: 50%;
+        }
+
+        .timeline .content {
+            padding: 20px;
+            background-color: #00BFAE;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .timeline .content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .timeline .content p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .timeline .year {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="timeline">
+        <ul>
+            <!-- Section: My Experiences -->
+            <li>
+                <div class="container left">
+                    <div class="content">
+                        <h3>My Experiences</h3>
+                        <p>2020: Started my journey into data analytics during my BBA in Finance. Worked on finance-related case studies and learned management principles.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container right">
+                    <div class="content">
+                        <p>2023: Gained practical experience applying data-driven decision-making to HR, management, and finance in organizational settings.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Section: My Certifications -->
+            <li>
+                <div class="container left">
+                    <div class="content">
+                        <h3>My Certifications</h3>
+                        <p>2021: Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Section: My Expertise -->
+            <li>
+                <div class="container right">
+                    <div class="content">
+                        <h3>My Expertise</h3>
+                        <p>Proficient in integrating HR, management, and finance data to make strategic, data-driven decisions that impact organizational growth.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Section: How it all comes together -->
+            <li>
+                <div class="container left">
+                    <div class="content">
+                        <h3>How It All Comes Together</h3>
+                        <p>My unique combination of skills allows me to bridge the gap between analytics and strategic decision-making in diverse organizational fields.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    """,
+    height=1100,  # Adjust height as needed
+)

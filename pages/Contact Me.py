@@ -5,8 +5,6 @@ st.set_page_config(
     page_icon="🤝",
 )
 
-import streamlit as st
-
 st.markdown(
     """
     <a href="https://www.linkedin.com/in/sharazar/" target="_blank">
