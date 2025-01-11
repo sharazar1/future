@@ -96,7 +96,7 @@ html_code = f"""
         particlesJS("particles-js", {{
             "particles": {{
                 "number": {{
-                    "value": 80,
+                    "value": 300,
                     "density": {{
                         "enable": true,
                         "value_area": 800
@@ -112,29 +112,53 @@ html_code = f"""
                         "color": "#000000"
                     }}
                 }},
+                "polygon": {{
+                "nb_sides": 5
+                }},
                 "opacity": {{
                     "value": 0.5,
-                    "random": false
+                    "random": false,
                 }},
                 "size": {{
                     "value": 3,
-                    "random": true
+                    "random": false,
+                    "anim": {{
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.2,
+                    "sync": false
+                    }}
+                }},
+                "size": {{
+                "value": 2,
+                "random": true,
+                "anim": {{
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+                }}
                 }},
                 "line_linked": {{
                     "enable": true,
-                    "distance": 150,
+                    "distance": 100,
                     "color": "#ffffff",
-                    "opacity": 0.4,
+                    "opacity": 0.22,
                     "width": 1
                 }},
                 "move": {{
                     "enable": true,
-                    "speed": 2,
+                    "speed": 0.2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
                     "out_mode": "out",
-                    "bounce": false
+                    "bounce": true,
+                    "attract": {{
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                    }}
                 }}
             }},
             "interactivity": {{
@@ -142,12 +166,13 @@ html_code = f"""
                 "events": {{
                     "onhover": {{
                         "enable": true,
-                        "mode": "repulse"
+                        "mode": "grab"
                     }},
                     "onclick": {{
                         "enable": true,
-                        "mode": "push"
-                    }}
+                        "mode": "repulse"
+                    }},
+                    "resize": true
                 }},
                 "modes": {{
                     "repulse": {{
