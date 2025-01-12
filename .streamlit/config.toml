@@ -7,5 +7,5 @@ gatherUsageStats = true
 
 [theme]
 primaryColor="#212121" 
-backgroundColor="#000000" 
+backgroundColor="#272b2e" 
 secondaryBackgroundColor="#575d69"

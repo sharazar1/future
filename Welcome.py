@@ -45,7 +45,7 @@ html_code = f"""
             top: 0;
             left: 0;
             z-index: -1; /* Background layer */
-            background-color: #000; /* Black background */
+            background-color: #272b2e;
         }}
 
         /* Centered content */
@@ -87,7 +87,8 @@ html_code = f"""
         <img src="data:image/jpeg;base64,{image_base64}" alt="Profile Picture">
         <h1>Sharazar Munawar</h1>
         <h2>Bridging the Gap between Data, Decisions and Infrastructure</h2>
-        <p>Data Analytics | Visualization | Infrastructure Modernization | Project Leadership</p>
+        <h3>Innovation, Efficency and Colaboration is the name of the game in Life and in Organizations</h3>
+        <p>Specializing in Data Analytics | Visualization | Infrastructure Modernization | Project Leadership | Team Management</p>
     </div>
 
     <!-- Particles.js script -->
@@ -170,7 +171,7 @@ html_code = f"""
                     }},
                     "onclick": {{
                         "enable": true,
-                        "mode": "repulse"
+                        "mode": "push"
                     }},
                     "resize": true
                 }},
@@ -250,9 +251,6 @@ with st.sidebar:
 # timeline Below
 
 
-import streamlit as st
-import streamlit.components.v1 as components
-
 # Embed the updated timeline HTML/CSS
 components.html(
     """
@@ -263,7 +261,7 @@ components.html(
 
         body {
             font-family: Arial, sans-serif;
-            background: #f7f7f7;
+            background: rgba(207, 203, 212, 0.2);
             color: #333;
         }
 
@@ -348,15 +346,16 @@ components.html(
             <li>
                 <div class="container left">
                     <div class="content">
-                        <h3>My Experiences</h3>
-                        <p>2020: Started my journey into data analytics during my BBA in Finance. Worked on finance-related case studies and learned management principles.</p>
+                        <h3 style="font-family: Comic Sans MS;">My Experiences</h3>
+                        <p><b>2020:</b> Started my journey into data analytics during my BBA in Finance. Worked on finance-related case studies and learned management principles and data driven decision making.</p>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="container right">
                     <div class="content">
-                        <p>2023: Gained practical experience applying data-driven decision-making to HR, management, and finance in organizational settings.</p>
+                        <h3 style="font-family: Comic Sans MS;">My Experiences</h3>
+                        <p><b>2022: </b>Gained practical experience applying data-driven decision-making to HR, management, and finance in organizational settings. Managed remote teams</p>
                     </div>
                 </div>
             </li>
@@ -365,8 +364,8 @@ components.html(
             <li>
                 <div class="container left">
                     <div class="content">
-                        <h3>My Certifications</h3>
-                        <p>2021: Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics.</p>
+                        <h3 style="font-family: Comic Sans MS;">My Certifications</h3>
+                        <p><b>2020 to 2023:<b/> Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics. Learned essential team managment strategies and disaster response strategies from Google.</p>
                     </div>
                 </div>
             </li>
@@ -375,8 +374,9 @@ components.html(
             <li>
                 <div class="container right">
                     <div class="content">
-                        <h3>My Expertise</h3>
-                        <p>Proficient in integrating HR, management, and finance data to make strategic, data-driven decisions that impact organizational growth.</p>
+                        <h3 style="font-family: Comic Sans MS;">My Expertise</h3>
+                        <p style="margin-bottom: 10px;">Proficient in integrating data anlytics and financal data to make strategic, data-driven decisions that impact organizational growth.</p>
+                        <p>I Understand the importance of organizational cultue in maintaining organizational success.</p>
                     </div>
                 </div>
             </li>
@@ -385,13 +385,14 @@ components.html(
             <li>
                 <div class="container left">
                     <div class="content">
-                        <h3>How It All Comes Together</h3>
-                        <p>My unique combination of skills allows me to bridge the gap between analytics and strategic decision-making in diverse organizational fields.</p>
+                        <h3 style="font-family: Comic Sans MS;">How It All Comes Together</h3>
+                        <p style="margin-bottom: 10px;">My unique combination of skills allows me to bridge the gap between analytics and strategic decision-making in diverse organizational fields.</p>
+                        <p>I work to build an organizational culture which supports organizational sucess, driving all ecision making from decisions grounded in real world data.</p>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
     """,
-    height=1100,  # Adjust height as needed
+    height = 1600,  # Adjust height as needed
 )
