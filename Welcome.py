@@ -86,8 +86,8 @@ html_code = f"""
     <div class="content">
         <img src="data:image/jpeg;base64,{image_base64}" alt="Profile Picture">
         <h1>Sharazar Munawar</h1>
-        <h2>Bridging the Gap between Data, Decisions and Infrastructure</h2>
-        <h3>Innovation, Efficency and Colaboration is the name of the game in Life and in Organizations</h3>
+        <h2>Bridging the Gap between Teams, Data, Decisions and Infrastructure</h2>
+        <h3>Driving success through innovation, efficiency, and collaboration.</h3>
         <p>Specializing in Data Analytics | Visualization | Infrastructure Modernization | Project Leadership | Team Management</p>
     </div>
 
@@ -347,7 +347,7 @@ components.html(
                 <div class="container left">
                     <div class="content">
                         <h3 style="font-family: Comic Sans MS;">My Experiences</h3>
-                        <p><b>2020:</b> Started my journey into data analytics during my BBA in Finance. Worked on finance-related case studies and learned management principles and data driven decision making.</p>
+                        <p><b>2020:</b> Started my journey into data analytics during my BBA in Finance. Worked on finance-related case studies and projects where I learned management principles and data driven decision making.</p>
                     </div>
                 </div>
             </li>
@@ -365,7 +365,7 @@ components.html(
                 <div class="container left">
                     <div class="content">
                         <h3 style="font-family: Comic Sans MS;">My Certifications</h3>
-                        <p><b>2020 to 2023:<b/> Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics. Learned essential team managment strategies and disaster response strategies from Google.</p>
+                        <p><b>2020 to 2023:<b/> Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics. Learned essential team managment strategies, disaster response strategies and crisi managment from Google.</p>
                     </div>
                 </div>
             </li>
@@ -387,7 +387,7 @@ components.html(
                     <div class="content">
                         <h3 style="font-family: Comic Sans MS;">How It All Comes Together</h3>
                         <p style="margin-bottom: 10px;">My unique combination of skills allows me to bridge the gap between analytics and strategic decision-making in diverse organizational fields.</p>
-                        <p>I work to build an organizational culture which supports organizational sucess, driving all ecision making from decisions grounded in real world data.</p>
+                        <p>I work to build an organizational culture which supports organizational sucess, driving all decision making from decisions grounded in real world data.</p>
                     </div>
                 </div>
             </li>
