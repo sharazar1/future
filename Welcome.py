@@ -125,7 +125,7 @@ html_code = f"""
                     "random": false,
                     "anim": {{
                     "enable": false,
-                    "speed": 1,
+                    "speed": 30,
                     "opacity_min": 0.2,
                     "sync": false
                     }}
@@ -135,7 +135,7 @@ html_code = f"""
                 "random": true,
                 "anim": {{
                 "enable": false,
-                "speed": 40,
+                "speed": 400,
                 "size_min": 0.1,
                 "sync": false
                 }}
@@ -149,7 +149,7 @@ html_code = f"""
                 }},
                 "move": {{
                     "enable": true,
-                    "speed": 0.2,
+                    "speed": 2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -197,7 +197,7 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
-
+st.sidebar.text("Lets Connect!!!!!")
 with st.sidebar:
 
     # LinkedIn button with GIF
@@ -336,7 +336,7 @@ components.html(
 
         .timeline .year {
             font-size: 18px;
-            font-weight: bold;
+           
         }
     </style>
 
@@ -365,7 +365,7 @@ components.html(
                 <div class="container left">
                     <div class="content">
                         <h3 style="font-family: Comic Sans MS;">My Certifications</h3>
-                        <p><b>2020 to 2023:<b/> Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics. Learned essential team managment strategies, disaster response strategies and crisi managment from Google.</p>
+                        <p><b>2020 to 2023:</b> Completed certifications in Python, SQL, and Power BI, equipping myself with essential tools for data analytics. Learned essential team managment strategies, disaster response strategies and crisi managment from Google.</p>
                     </div>
                 </div>
             </li>
