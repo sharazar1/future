@@ -125,7 +125,7 @@ html_code = f"""
                     "random": false,
                     "anim": {{
                     "enable": false,
-                    "speed": 30,
+                    "speed": 1,
                     "opacity_min": 0.2,
                     "sync": false
                     }}
@@ -135,7 +135,7 @@ html_code = f"""
                 "random": true,
                 "anim": {{
                 "enable": false,
-                "speed": 400,
+                "speed": 40,
                 "size_min": 0.1,
                 "sync": false
                 }}
@@ -149,7 +149,7 @@ html_code = f"""
                 }},
                 "move": {{
                     "enable": true,
-                    "speed": 2,
+                    "speed": 0.2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
