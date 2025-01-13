@@ -197,7 +197,6 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
-e
 with st.sidebar:
 
     # LinkedIn button with GIF
