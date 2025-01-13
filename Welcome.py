@@ -197,7 +197,7 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
-st.sidebar.text("Lets Connect!!!!!")
+e
 with st.sidebar:
 
     # LinkedIn button with GIF
@@ -336,7 +336,7 @@ components.html(
 
         .timeline .year {
             font-size: 18px;
-           
+            font-weight: bold;
         }
     </style>
 

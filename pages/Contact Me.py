@@ -4,6 +4,8 @@ st.set_page_config(
     page_title="Get in Touch!",
     page_icon="🤝",
 )
+st.balloons()
+st.toast("Welcome", icon = "🎉")
 
 st.markdown(
     """

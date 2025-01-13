@@ -6,6 +6,6 @@ toolbarMode = "minimal"
 gatherUsageStats = true
 
 [theme]
-primaryColor="#212121" 
-backgroundColor="#272b2e" 
-secondaryBackgroundColor="#575d69"
+primaryColor="#1f9978" 
+backgroundColor="#1f4799" 
+secondaryBackgroundColor="#991f2d"
