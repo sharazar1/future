@@ -197,6 +197,7 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
+
 with st.sidebar:
 
     # LinkedIn button with GIF
@@ -318,7 +319,7 @@ components.html(
 
         .timeline .content {
             padding: 20px;
-            background-color: #00BFAE;
+            background-color: #7a0707;
             color: white;
             border-radius: 6px;
         }
