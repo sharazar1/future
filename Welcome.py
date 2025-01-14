@@ -319,7 +319,7 @@ components.html(
 
         .timeline .content {
             padding: 20px;
-            background-color: #7a0707;
+            background-color: #00BFAE;
             color: white;
             border-radius: 6px;
         }
