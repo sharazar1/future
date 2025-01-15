@@ -197,7 +197,7 @@ components.html(html_code, height=600, scrolling=False)
 
 
 # sidebar next
-
+st.sidebar.title("Contact Me!!!!")
 with st.sidebar:
 
     # LinkedIn button with GIF
@@ -396,3 +396,4 @@ components.html(
     """,
     height = 1600,  # Adjust height as needed
 )
+st.toast("Welcome to my personal portfolio!", icon="👋")
